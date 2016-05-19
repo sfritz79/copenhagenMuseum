@@ -8,6 +8,7 @@ datafile$Species<-sapply(namessplit,function(x)paste(x[1],x[2],sep=" "))
 #correct mistakes
 datafile$Species[which(datafile$Species=="Prays f.")]<-"Prays ruficeps"
 datafile$Species[which(datafile$Species=="Euxoa 'tritici'")]<-"Euxoa tritici"
+hist(datafile$year)
 
 #format time data
 library(lubridate)
